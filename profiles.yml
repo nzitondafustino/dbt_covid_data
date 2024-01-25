@@ -1,0 +1,22 @@
+my_new_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account-json
+      project: ml-flask-deployment
+      dataset: test_instance_1
+      threads: 4 # Must be a value of 1 or greater
+
+      # These fields come from the service account json keyfile
+      keyfile_json:
+        type: service_account
+        project_id: ml-flask-deployment
+        private_key_id: c8a986a350de724a2f35594eba0d68dd1cb4876d
+        private_key: -----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC++jBUtCU3+HSA\n9j/zJXn0I6mK5Mi9xcOTaBI1AcsCYoj3VOkBAFQy9SbglKcmOzZgm/I/PczP/ZRL\nuV1nCm0jlope0Z+P+Pr6QAemEf4SE8JAE8eENllLbe0R2BBf0DiWNrd3mKBNWlrS\ngFPgn6wb6coiIxEyIgm948DuFW9Ds50/D/q39wtPET2uqpKF1Yi8P8SZ+71V4DFc\n70hIm8UWLD/yKO9EynAU9aAIGzNB0ywvB3KnqNhFzRjm7B18AjU5AvehOSMMDYXV\ni8W1U0UL4A2MGB24iwTzPPrqXi/wfk6A6wRC/htc5cCDPu3vAZ4fjh/IDZ07ZaEK\nUcWo64VRAgMBAAECggEAT0+13KeHwWvUbm5V9pN8xzA8S+thlrZX15Lj5NGezpm/\nSgAgWAMb9KGtCJ2ToSP8HDkHbM4sjcBA4wXTTWSeGKZ/RouF2ZPMHzuSMZzNSBKe\nnF/afwTXJqU7TCrP+gqORYvpu6hOAnHgwAT9UI7fOiRohq7LiGdsZkj8qaOLNrDc\niwcKdHF6qomiMEvDwNGTYxckzNa0OMTAPMMhEnYzWUEGqwNMTsp86SYGyT8T8WqH\nFZeLkyp4mZX7KMJE/uA4P0rajPpPaDcadoJx2xWtku33fhDy+wL9kkQ/Lo602k7L\nPmuCK87em3ZRpZzsYEF0Y1uxr4dZkItKGJpjH/KN5QKBgQDid6TmJD8JLwQxKJn7\nSpHiLvaSlOP6hmdIwsmdSkZDoLLQQUpMsSENgw6wAnKVC9soAEhvfwD5E/FKZH5m\nKmFARNT2nUH2mR07PGpePUp/In3V8ESO1bZTjqjPGvUXLwNFJlUt4bfnSOkwPz4m\n6vD+ZagmOh0C/sBka49vFDvMLwKBgQDX4b/QP4SV1cd+tjkvo5T0AMtrwN3/tYf3\npY/79pS73Xsq7vogHceUq0oHelI2uP0GZFDvBgXZJ9hlDZp7I32nyHqgM8lOkY80\n9XgMOhAyknfbL6eQ/kvZwrIf6eE3JWSsblvannpa69fLfsGZId1H0g1IF2zkF8kA\nWSap+GHmfwKBgQDcExatC1Yyj30MZH9Woz2nRqoZAhWV1Fy0aY5RiudDOvvpwzj3\n1D3hipWQV6CP1MixU60QpKQGaOnXuFbY46BEO1+VFHcQs/SjJu/bCsbFS3hrmaSW\nBXq8Mms7b9/zGp2b6kdmYe48FS9+0kaMvU1aeuFv3JNq4LOIIrptYIVHwwKBgQDN\nT62U6FO4DHCGWddZL0HiLT9JY0u+fW6qX5LoFkKtyJ3y3wSStr+w7JajNfoqgRRi\nl9VA/YFiXTq4II/ivIYso8W7xoSVbGm9/BYHytDMx++lTVUX2EFbAIdXQp8mSzHL\nq8k/yaij/9hjeFG2yTYhr+thvKWa5+QJqL/UtpylEQKBgQDfSyK47XKzx/iDPxoo\niKuN6ZQikdNA4WMYWYfO22jz1pyWOX9iBpTMB8typ+/myeSWjjIJqiHsIegaeEMu\n2Gcsuf3AbGYoc3qTVDkHvZpTlZD5KrrN4VHcE0ybfRoOvU+fj28MtgZldFMAhL38\ndWjVteUKRpGetcgoMMypnN8rJw==\n-----END PRIVATE KEY-----\n
+        client_email: dbt-cert@ml-flask-deployment.iam.gserviceaccount.com
+        client_id: 104387210865614065266
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        token_uri: https://oauth2.googleapis.com/token
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        client_x509_cert_url: https://www.googleapis.com/robot/v1/metadata/x509/dbt-cert%40ml-flask-deployment.iam.gserviceaccount.com
